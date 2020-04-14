@@ -1,0 +1,135 @@
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing:border-box;
+    transition: height 200ms ease-in-out, padding 200ms ease-in-out;
+    height: 120px;
+    padding: 40px 60px;
+
+    .logo img{
+        width:85px;
+        height:40px;
+    }
+    .navBar{
+
+        display: flex;
+        height: 40px;
+
+        .menu-item {
+            overflow: hidden;
+            font-size: 14px;
+            border-radius: 40px;
+            color:$primary-color;
+            line-height: 40px;
+            margin: 0 10px;
+            padding: 0 15px;
+            display: flex;
+
+            .caretIcon{
+                box-sizing: border-box;
+                padding: 0px 0px 0px 6px;
+                i{
+                    font-size: 14px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+     .menu-button{
+        margin: 0 15px;
+        padding: 12px 24px;
+        min-width: 122px;
+        max-width: 175px;
+        background-color: #6b38f5;
+        text-align: center;
+        border-radius: 40px;
+        font-size: 14px;
+        a{
+            color: #fff!important;
+            font-family: inherit;
+            :hover{
+                background-color:#642de4;
+            }
+        }
+    }
+
+}
+
+.main-wrapper {
+    position: relative;
+    background: #ffffff;
+    margin: 0 auto;
+
+    .hero-header{
+        position: relative;
+        height: 568px;
+        display: flex;
+        flex-wrap:nowrap;
+
+        .intro{
+            position: absolute;
+            width: 609px;
+            padding: 0 60px;
+            bottom: 70px;
+            z-index: 1;
+
+            .intro-main{
+                font-family: inherit;
+                font-size: 28px;
+                line-height: 33px;
+                color: $primary-color;
+            }
+            .intro-text{
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 200;
+                color: #62626f;
+                margin-top: 30px;
+                margin-bottom: 60px;
+            }
+            .intro-button{
+                display: flex;
+                margin-top: 30px;
+                background-color: transparent;
+                
+
+                .button{
+                    border-radius: 40px;
+                    width: 155px;
+                    height: 55px;
+                    font-size: 14px;
+                    line-height: 55px;
+                    font-family: inherit;
+                    text-align: center;
+                    background-color:#6b38f5 ;
+                    color: #fff;
+                    :hover{
+                        background-color:#642de4;
+                    }
+                    
+                }
+            }
+        }
+
+        .hero-bg {
+            position: absolute;
+            left: 504px;
+            width: 765px;
+            right: 0px;
+            margin-top: 140px;
+            height: initial;
+            img{
+                width: 100%;
+                height: inherit;
+            }
+        }
+    }
+
+}

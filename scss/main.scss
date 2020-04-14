@@ -1,7 +1,44 @@
 @import 'config';
+@import 'home';
 
 body{
     height: 100vh;
     font-family: 'Fira Mono', monospace;
     color:#fff;
+}
+
+a{
+    color:$primary-color;
+    text-decoration: none;
+    background-color: transparent;
+    
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.d-none{
+    display: none;
+}
+
+
+button{
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Fira Mono', monospace;
+    cursor: pointer;
+}
+
+
+.nav-colored{
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0px 1px 0px #eeeffb;
+    transition: opacity 200ms ease-in-out;
+}
+
+.nav-trasparent{
+    background-color: transparent;
 }

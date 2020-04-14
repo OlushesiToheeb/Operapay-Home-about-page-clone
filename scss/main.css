@@ -5,9 +5,201 @@
   padding: 0;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: height 200ms ease-in-out, padding 200ms ease-in-out;
+  transition: height 200ms ease-in-out, padding 200ms ease-in-out;
+  height: 120px;
+  padding: 40px 60px;
+}
+
+.nav .logo img {
+  width: 85px;
+  height: 40px;
+}
+
+.nav .navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+}
+
+.nav .navBar .menu-item {
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 40px;
+  color: #1a1038;
+  line-height: 40px;
+  margin: 0 10px;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav .navBar .menu-item .caretIcon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 0px 0px 6px;
+}
+
+.nav .navBar .menu-item .caretIcon i {
+  font-size: 14px;
+  color: #1a1038;
+}
+
+.nav .menu-button {
+  margin: 0 15px;
+  padding: 12px 24px;
+  min-width: 122px;
+  max-width: 175px;
+  background-color: #6b38f5;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+.nav .menu-button a {
+  color: #fff !important;
+  font-family: inherit;
+}
+
+.nav .menu-button a :hover {
+  background-color: #642de4;
+}
+
+.main-wrapper {
+  position: relative;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.main-wrapper .hero-header {
+  position: relative;
+  height: 568px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main-wrapper .hero-header .intro {
+  position: absolute;
+  width: 609px;
+  padding: 0 60px;
+  bottom: 70px;
+  z-index: 1;
+}
+
+.main-wrapper .hero-header .intro .intro-main {
+  font-family: inherit;
+  font-size: 28px;
+  line-height: 33px;
+  color: #1a1038;
+}
+
+.main-wrapper .hero-header .intro .intro-text {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 200;
+  color: #62626f;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.main-wrapper .hero-header .intro .intro-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  background-color: transparent;
+}
+
+.main-wrapper .hero-header .intro .intro-button .button {
+  border-radius: 40px;
+  width: 155px;
+  height: 55px;
+  font-size: 14px;
+  line-height: 55px;
+  font-family: inherit;
+  text-align: center;
+  background-color: #6b38f5;
+  color: #fff;
+}
+
+.main-wrapper .hero-header .intro .intro-button .button :hover {
+  background-color: #642de4;
+}
+
+.main-wrapper .hero-header .hero-bg {
+  position: absolute;
+  left: 504px;
+  width: 765px;
+  right: 0px;
+  margin-top: 140px;
+  height: initial;
+}
+
+.main-wrapper .hero-header .hero-bg img {
+  width: 100%;
+  height: inherit;
+}
+
 body {
   height: 100vh;
   font-family: 'Fira Mono', monospace;
   color: #fff;
+}
+
+a {
+  color: #1a1038;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.text-secondary {
+  color: #6b38f5;
+}
+
+.d-none {
+  display: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: 'Fira Mono', monospace;
+  cursor: pointer;
+}
+
+.nav-colored {
+  z-index: 99;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 0px #eeeffb;
+          box-shadow: 0px 1px 0px #eeeffb;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.nav-trasparent {
+  background-color: transparent;
 }
 /*# sourceMappingURL=main.css.map */

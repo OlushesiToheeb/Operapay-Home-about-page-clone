@@ -10,18 +10,18 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <a href="/"><img src="./assets//imgs/logo.svg" alt="logo"></a>
+        <nav class="nav" id="myNav">
+            <a href="/" class="logo"><img src="./assets//imgs/logo.svg" alt="logo"></a>
             <div class="navBar">
-                <a href="/" class="menu-item">
+                <a href="/" class="dropdown menu-item">
                     Service
                     <div class="caretIcon">
-                        <i class="fas fa-angle-up"></i>
-                        <i class="fas fa-angle-down"></i>
+                        <i class="fas fa-angle-up d-none"></i>
+                        <i class="fas fa-angle-down "></i>
                     </div> 
                 </a>
 
-                <div class="dropdown-menu">
+                <div class="dropdown-menu d-none">
                     <div class="dropdown-menu-grid">
                         <a href="" class="dropdown-menu-service">
                             <div class="dropdown-menu-service-image">
@@ -163,10 +163,34 @@
                 <a href="/" class="menu-item">Blog</a>
             </div>
 
-            <a href="/" class="menu-button">Become an Agent</a>
+            <button class="menu-button">
+                <a href="/">Become an Agent</a>
+            </button>
+                
         </nav>
     </header>
 
+    <main class="main-wrapper">
+        <div class="page-wrapper">
+            <section class="hero-header" style="background-color: rgb(248, 250, 252)">
+                <div class="intro">
+                    <h2 class="intro-main">Take control of your personal economy with
+                        <span class="text-secondary">OPay</span>
+                    </h2>
+                    <p class="intro-text">
+                        The freedom and security of paying for goods, earning cash, and topping up your personal accounts is in your hands.
+                    </p>
+                    <button class="intro-button">
+                        <a href="/" class="button">Download App</a>
+                    </button>
+                </div>
+                <div class="hero-bg" style="background-image: url(/assets/imgs/hero-bg.svg)">
+                    <img src="/assets/imgs/hero-img.png" alt="OPay-MOBILE-App" class="hero-img">
+                </div>
+            </section>
+        </div>
+    </main>
 
+    <script src="/index.js"></script>
 </body>
 </html>
