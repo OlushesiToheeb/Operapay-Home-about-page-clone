@@ -92,7 +92,7 @@
 
 .main-wrapper .hero-header {
   position: relative;
-  height: 568px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +102,7 @@
 
 .main-wrapper .hero-header .intro {
   position: absolute;
-  width: 609px;
+  width: 100%;
   padding: 0 60px;
   bottom: 70px;
   z-index: 1;
@@ -110,7 +110,7 @@
 
 .main-wrapper .hero-header .intro .intro-main {
   font-family: inherit;
-  font-size: 28px;
+  font-size: 2em;
   line-height: 33px;
   color: #1a1038;
 }
@@ -150,16 +150,158 @@
 
 .main-wrapper .hero-header .hero-bg {
   position: absolute;
-  left: 504px;
+  left: 584px;
   width: 765px;
   right: 0px;
-  margin-top: 140px;
+  margin-top: 168px;
   height: initial;
 }
 
 .main-wrapper .hero-header .hero-bg img {
   width: 100%;
   height: inherit;
+}
+
+.main-wrapper .feature01 {
+  position: relative;
+}
+
+.main-wrapper .feature01 .content1 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 60px;
+  padding-top: 150px;
+}
+
+.main-wrapper .feature01 .content1 .content-text {
+  padding: 65px 20px;
+  line-height: normal;
+  padding-bottom: 75px;
+  text-align: left;
+  color: #1a1038;
+  position: relative;
+  width: 550px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.main-wrapper .feature01 .content1 .content-text .content-text-title-sub {
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: #6b38f5;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.main-wrapper .feature01 .content1 .content-text .content-text-title-sub::before {
+  display: inline-block;
+  margin-right: 0px;
+  content: "-";
+  color: #41d9af;
+}
+
+.main-wrapper .feature01 .content1 .content-text .content-text-title {
+  line-height: 55px;
+  font-size: 44px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.main-wrapper .feature01 .content1 .content-text .content-text-p {
+  line-height: 24px;
+  font-size: 20px;
+  color: #62626f;
+  font-weight: 200;
+  width: 390px;
+}
+
+.main-wrapper .feature01 .content1 .content-text .content-key {
+  position: absolute;
+  left: 0;
+  width: inherit;
+  z-index: 0;
+  display: block;
+  -webkit-transition: -webkit-transform 50ms linear;
+  transition: -webkit-transform 50ms linear;
+  transition: transform 50ms linear;
+  transition: transform 50ms linear, -webkit-transform 50ms linear;
+  will-change: transform;
+}
+
+.main-wrapper .feature01 .content1 .content-text .content-key span {
+  display: block;
+  width: 100%;
+  line-height: 200px;
+  font-size: 200px;
+  font-weight: normal;
+  opacity: 0.5;
+  overflow: visible;
+  white-space: nowrap;
+  color: transparent;
+  -webkit-text-stroke: 1px #bea8fd;
+}
+
+.main-wrapper .feature01 .content1 .content-video {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: -40px;
+  overflow: visible;
+  z-index: 1;
+  top: 0;
+  left: -20px;
+}
+
+.main-wrapper .feature01 .content1 .content-video .phone-bg {
+  position: relative;
+  top: 0;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: auto;
+}
+
+.main-wrapper .feature01 .content1 .content-video .video-wrapper {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: 100%;
+}
+
+.main-wrapper .feature01 .content1 .content-video .video-wrapper .phone-frame {
+  position: absolute;
+  width: 100%;
+}
+
+.main-wrapper .feature01 .content1 .content-video .video-wrapper .video-placeholder {
+  position: absolute;
+  top: 4.93%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 54%;
+}
+
+.main-wrapper .feature01 .content1 .content-video .video-wrapper video {
+  position: absolute;
+  top: 4.93%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 54%;
 }
 
 body {
