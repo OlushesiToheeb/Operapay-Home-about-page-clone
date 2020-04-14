@@ -446,6 +446,94 @@
   width: 54%;
 }
 
+.main-wrapper .ofood-wrapper {
+  position: relative;
+}
+
+.main-wrapper .ofood-wrapper .content {
+  min-height: 685px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 20px;
+}
+
+.main-wrapper .ofood-wrapper .content .content-text {
+  padding: 65px 20px;
+  line-height: normal;
+  padding-bottom: 75px;
+  padding-left: 50px;
+  text-align: left;
+  color: #1a1038;
+  position: relative;
+  width: 550px;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+
+.main-wrapper .ofood-wrapper .content .content-text .content-text-title-sub {
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: #6b38f5;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.main-wrapper .ofood-wrapper .content .content-text .content-text-title-sub::before {
+  display: inline-block;
+  margin-right: 0px;
+  content: "-";
+  color: #41d9af;
+}
+
+.main-wrapper .ofood-wrapper .content .content-text .content-text-title {
+  line-height: 55px;
+  font-size: 44px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.main-wrapper .ofood-wrapper .content .content-text .content-text-p {
+  line-height: 24px;
+  font-size: 20px;
+  color: #62626f;
+  font-weight: 200;
+  width: 390px;
+}
+
+.main-wrapper .ofood-wrapper .ofood-image-wrapper {
+  position: relative;
+  margin: 0 0 155px 80px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.main-wrapper .ofood-wrapper .ofood-image-wrapper .ofood-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+}
+
+.main-wrapper .ofood-wrapper .ofood-image-wrapper .ofood-image {
+  z-index: 0;
+  width: 100%;
+  height: auto;
+}
+
 body {
   height: 100vh;
   font-family: 'Fira Mono', monospace;
