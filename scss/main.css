@@ -534,6 +534,86 @@
   height: auto;
 }
 
+.main-wrapper .partner-wrapper {
+  position: relative;
+}
+
+.main-wrapper .partner-wrapper .content-text {
+  padding-left: 226px;
+  padding-right: 226px;
+  padding-top: 65px;
+  padding-bottom: 65px;
+  line-height: normal;
+  text-align: center;
+  color: #1a1038;
+  position: relative;
+}
+
+.main-wrapper .partner-wrapper .content-text .content-text-title-sub {
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: #6b38f5;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.main-wrapper .partner-wrapper .content-text .content-text-title-sub::before {
+  display: inline-block;
+  margin-right: 0px;
+  content: "-";
+  color: #41d9af;
+}
+
+.main-wrapper .partner-wrapper .content-text .content-text-title {
+  line-height: 55px;
+  font-size: 44px;
+  margin-bottom: 15px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.main-wrapper .partner-wrapper .content-text .content-text-p {
+  color: #62626f;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0 auto;
+  width: 590px;
+}
+
+.main-wrapper .partner-wrapper .partner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px auto 0 auto;
+  width: 650px;
+  padding-bottom: 140px;
+}
+
+.main-wrapper .partner-wrapper .partner-list .partner-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
 body {
   height: 100vh;
   font-family: 'Fira Mono', monospace;
