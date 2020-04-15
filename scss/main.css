@@ -1344,6 +1344,114 @@
   font-weight: 200;
 }
 
+.main-wrapper .our-values-wrapper {
+  position: relative;
+}
+
+.main-wrapper .our-values-wrapper .our-values {
+  position: relative;
+  padding: 100px 0;
+}
+
+.main-wrapper .our-values-wrapper .our-values::before {
+  left: -119px;
+  top: 76px;
+  width: 283px;
+  height: 478px;
+  background: url(/assets/imgs/who-we-are-background-image-left.svg) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.main-wrapper .our-values-wrapper .our-values::after {
+  right: -156px;
+  top: 91px;
+  width: 451px;
+  height: 589px;
+  background: url(/assets/imgs/who-we-are-background-image-right.svg) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.main-wrapper .our-values-wrapper .our-values .content-title {
+  color: #1a1038;
+  line-height: normal;
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.main-wrapper .our-values-wrapper .our-values .content-title .content-title-main {
+  font-weight: normal;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  padding: 10px 0;
+  font-size: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 55px;
+  color: #191414;
+}
+
+.main-wrapper .our-values-wrapper .our-values .content-title .content-title-text {
+  font-size: 22px;
+  line-height: 133.76%;
+  color: #191414;
+  width: 100%;
+  font-weight: 200;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-wrapper .our-values-wrapper .our-values .our-values__list {
+  position: relative;
+  z-index: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 91px;
+}
+
+.main-wrapper .our-values-wrapper .our-values .our-values__list .info-with-image-item {
+  text-align: left;
+  color: #1a1038;
+}
+
+.main-wrapper .our-values-wrapper .our-values .our-values__list .info-with-image-item .info-with-image-item__icon {
+  margin-top: 45px;
+  margin-bottom: 24px;
+  width: 80px;
+  height: 80px;
+}
+
+.main-wrapper .our-values-wrapper .our-values .our-values__list .info-with-image-item .info-with-image-item__title {
+  margin-bottom: 20px;
+  line-height: 19px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.main-wrapper .our-values-wrapper .our-values .our-values__list .info-with-image-item .info-with-image-item__text {
+  margin: 0 auto;
+  width: 220px;
+  min-height: 93px;
+  font-size: 14px;
+  line-height: 145.92%;
+  font-weight: 200;
+}
+
 .footer {
   position: relative;
   padding: 75px 60px 67px 60px;
