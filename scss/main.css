@@ -844,6 +844,95 @@
   color: #62626f;
 }
 
+.main-wrapper .payment-card-wrapper {
+  position: relative;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card {
+  margin-bottom: 0;
+  padding: 0 calc((100% - 1152px) / 2) 155px;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .form-divider {
+  height: 12px;
+  background-image: url(/assets/imgs/form-divider.svg);
+  background-repeat: repeat-x;
+  width: 554px;
+  margin: 0 0 0 auto;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .content-text {
+  padding: 65px 0 0 0;
+  line-height: normal;
+  text-align: left;
+  color: #1a1038;
+  position: relative;
+  margin: 0 0 0 auto;
+  padding-top: 105px;
+  width: 554px;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .content-text .content-text-title-sub {
+  margin-bottom: 10px;
+  line-height: 25px;
+  color: #6b38f5;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .content-text .content-text-title-sub::before {
+  display: inline-block;
+  margin-right: 0px;
+  content: "-";
+  color: #41d9af;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .content-text .content-text-title {
+  line-height: 70px !important;
+  font-size: 44px;
+  margin-bottom: 30px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .content-text .content-text-p {
+  color: #62626f;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  padding: 0;
+  width: 455px;
+  margin-bottom: 30px;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .content-text .coming-soon {
+  font-size: 12px;
+  line-height: 25px;
+  color: #1a1038;
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .payment-card-hand {
+  position: absolute;
+  -webkit-transition: -webkit-transform 1000ms ease-in-out;
+  transition: -webkit-transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out;
+  transition: transform 1000ms ease-in-out, -webkit-transform 1000ms ease-in-out;
+  bottom: 0;
+  left: 110px;
+  -webkit-transform: translateX(0) translateY(0);
+          transform: translateX(0) translateY(0);
+}
+
+.main-wrapper .payment-card-wrapper .payment-card .payment-card-hand img {
+  height: auto;
+  padding-top: 0;
+  width: 330px;
+}
+
 body {
   height: 100vh;
   font-family: 'Fira Mono', monospace;
