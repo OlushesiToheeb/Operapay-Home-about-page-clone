@@ -319,4 +319,112 @@
 
         }
     }
+
+    .offices-wrapper{
+        position: relative;
+
+        .offices{
+            padding: 100px 20px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+            .content-title{
+                color: $primary-color;
+                line-height: normal;
+                position: relative;
+                padding: 0 60px 80px;
+                text-align: center;
+
+                .content-title-main {
+                    font-weight: normal;
+                    margin-block-start: 0px;
+                    margin-block-end: 0px;
+                    padding:0;
+                    font-size: 44px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    line-height: 52px;
+                    
+                }
+            }
+
+            .offices-info-map {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                width: 1125.48px;
+
+                .globe {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .offices-info-map__location {
+                    position: absolute;
+                    width: 48px;
+                    height: auto;
+                    transform-origin: center;
+                    transform: scale(0);
+                    transition: transform 300ms 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+                    .lagos {
+                        top: 321px;
+                        right: 557.48px;
+                        
+                    }
+
+                    .beijing{
+                        top: 207px;
+                        right: 205.48px;
+                    }
+
+                    .gothenburg{
+                        top: 119px;
+                        right: 524.48px;
+                    }
+                }
+
+            }
+
+            .office-info-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 80px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 1065px;
+                display: flex;
+
+                .office {
+                    color: $primary-color;
+                    text-align: left;
+                    flex: 1 1 33%;
+
+                    .office__flag-icon {
+                        margin: 0 15px 0 0;
+                        vertical-align: middle;
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .office__city {
+                        display: inline-block;
+                        vertical-align: middle;
+                        line-height: 30px;
+                        font-size: 16px;
+                    }
+
+                    .office__address {
+                        margin-top: 15px;
+                        line-height: 20px;
+                        font-size: 14px;
+                        font-weight: 200;
+                        margin-left: 45px;
+                        width: 251px;
+                    }
+                }
+            }
+
+        }
+    }
 }
