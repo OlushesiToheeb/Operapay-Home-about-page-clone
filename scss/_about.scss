@@ -76,7 +76,7 @@
             }
 
             &::after{
-                right: 10px;
+                right: 0px;
                 top: 160px;
                 width: 660px;
                 height: 461px;
@@ -157,7 +157,7 @@
             }
 
             &::after{
-                right: 10px;
+                right: 0px;
                 top: 160px;
                 width: 660px;
                 height: 461px;
@@ -238,7 +238,7 @@
             }
 
             &::after{
-                right: -156px;
+                right: 0px;
                 top: 91px;
                 width: 451px;
                 height: 589px;
@@ -425,6 +425,76 @@
                 }
             }
 
+        }
+    }
+
+    .vacancy-wrapper{
+        position: relative;
+
+        .job-vacancies{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 200px;
+            padding: 50px 60px 50px 122px;
+            background: #6b38f5;
+
+            &::before{
+                left: 46px;
+                top: 21px;
+                width: 105px;
+                height: 105px;
+                background: url(/assets/imgs/job-background-image-left.svg) no-repeat;
+                background-size: 100% 100%;
+                display: block;
+                content: "";
+                position: absolute;
+            }
+
+            &::after{
+                right: 0px;
+                top: 30px;
+                width: 450px;
+                height: 200px;
+                background: url(/assets/imgs/job-background-image-right-large.svg) no-repeat;
+                background-size: 100% 100%;
+                display: block;
+                content: "";
+                position: absolute;
+            }
+
+            .job-vacancies__text {
+                position: relative;
+                z-index: 3;
+                padding: 15px 0;
+                font-size: 24px;
+                width: 414px;
+                line-height: 150%;
+                color: #fff;
+                font-weight: 200;
+                text-align: left;
+            }
+            
+            .button {
+                border: none;
+                border-radius: 40px;
+                height: 55px;
+                font-size: 14px;
+                line-height: 55px;
+                font-family: "Basis Grotesque Pro", "Arial", sans-serif;
+                text-align: center;
+                cursor: pointer;
+                position: relative;
+                z-index: 3;
+                width: 175px;
+
+            }
+            .button--default {
+                background-color: #fff;
+                color: #6b38f5;
+            }
         }
     }
 }

@@ -1196,7 +1196,7 @@
 }
 
 .main-wrapper .content .introduction::after {
-  right: 10px;
+  right: 0px;
   top: 160px;
   width: 660px;
   height: 461px;
@@ -1282,7 +1282,7 @@
 }
 
 .main-wrapper .why-we-do-it .introduction::after {
-  right: 10px;
+  right: 0px;
   top: 160px;
   width: 660px;
   height: 461px;
@@ -1366,7 +1366,7 @@
 }
 
 .main-wrapper .our-values-wrapper .our-values::after {
-  right: -156px;
+  right: 0px;
   top: 91px;
   width: 451px;
   height: 589px;
@@ -1569,6 +1569,85 @@
   font-weight: 200;
   margin-left: 45px;
   width: 251px;
+}
+
+.main-wrapper .vacancy-wrapper {
+  position: relative;
+}
+
+.main-wrapper .vacancy-wrapper .job-vacancies {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 200px;
+  padding: 50px 60px 50px 122px;
+  background: #6b38f5;
+}
+
+.main-wrapper .vacancy-wrapper .job-vacancies::before {
+  left: 46px;
+  top: 21px;
+  width: 105px;
+  height: 105px;
+  background: url(/assets/imgs/job-background-image-left.svg) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.main-wrapper .vacancy-wrapper .job-vacancies::after {
+  right: 0px;
+  top: 30px;
+  width: 450px;
+  height: 200px;
+  background: url(/assets/imgs/job-background-image-right-large.svg) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.main-wrapper .vacancy-wrapper .job-vacancies .job-vacancies__text {
+  position: relative;
+  z-index: 3;
+  padding: 15px 0;
+  font-size: 24px;
+  width: 414px;
+  line-height: 150%;
+  color: #fff;
+  font-weight: 200;
+  text-align: left;
+}
+
+.main-wrapper .vacancy-wrapper .job-vacancies .button {
+  border: none;
+  border-radius: 40px;
+  height: 55px;
+  font-size: 14px;
+  line-height: 55px;
+  font-family: "Basis Grotesque Pro", "Arial", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+  width: 175px;
+}
+
+.main-wrapper .vacancy-wrapper .job-vacancies .button--default {
+  background-color: #fff;
+  color: #6b38f5;
 }
 
 .footer {
