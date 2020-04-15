@@ -1254,6 +1254,96 @@
   font-weight: 200;
 }
 
+.main-wrapper .why-we-do-it {
+  position: relative;
+}
+
+.main-wrapper .why-we-do-it .introduction {
+  position: relative;
+  padding: 95px 0 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-wrapper .why-we-do-it .introduction::before {
+  left: -132px;
+  top: 145px;
+  width: 386px;
+  height: 422px;
+  background: url(/assets/imgs/why-we-do-it-background-image-left.svg) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.main-wrapper .why-we-do-it .introduction::after {
+  right: 10px;
+  top: 160px;
+  width: 660px;
+  height: 461px;
+  background: url(/assets/imgs/why-we-do-it-background-image-right.svg) no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  content: "";
+  position: absolute;
+}
+
+.main-wrapper .why-we-do-it .introduction .introduction-bg-img {
+  position: relative;
+  z-index: 3;
+  max-width: initial;
+  margin-left: initial;
+  margin-right: 122px;
+  width: 465px;
+  height: 530px;
+  background: url(/assets/imgs/why-we-do-it.jpg) no-repeat;
+  background-position: 37% top;
+  background-size: auto 100%;
+}
+
+.main-wrapper .why-we-do-it .introduction .content-title {
+  color: #1a1038;
+  line-height: normal;
+  position: relative;
+  z-index: 3;
+  padding: 0 20px 0px;
+  text-align: left;
+  padding-left: 0;
+  padding-right: 0;
+  width: 394px;
+  margin-right: 123px;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.main-wrapper .why-we-do-it .introduction .content-title .content-title-main {
+  font-weight: normal;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  padding: 10px 0;
+  font-size: 44px;
+  margin-bottom: 0px;
+  padding-bottom: 45px;
+  line-height: 33px;
+  padding-top: 75px;
+}
+
+.main-wrapper .why-we-do-it .introduction .content-title .content-title-text {
+  line-height: 24px;
+  font-size: 16px;
+  color: #1a1038;
+  width: 100%;
+  font-weight: 200;
+}
+
 .footer {
   position: relative;
   padding: 75px 60px 67px 60px;
