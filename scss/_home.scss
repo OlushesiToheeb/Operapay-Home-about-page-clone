@@ -534,23 +534,140 @@
         }
     }
 
-    .user-testimonials-wrapper{
+        .user-testimonials-wrapper{
 
-        position:relative;
+            position:relative;
+
+            .content-text{
+                padding-left: 226px;
+                padding-right: 226px;
+                padding-top: 155px;
+                padding-bottom:0px;
+                line-height: normal;
+                text-align: center;
+                color: $primary-color;
+                position: relative;
+
+                .content-text-title-sub{
+                    margin-bottom: 10px;
+                    line-height: 25px;
+                    color: $secondary-color;
+                    font-size: 14px;
+                    font-weight: normal;
+                    margin-block-start: 0px;
+                    margin-block-end: 0px;
+                    &::before{
+                        display: inline-block;
+                        margin-right: 0px;
+                        content: "-";
+                        color: #41d9af;
+                    }
+                }
+                .content-text-title{
+                    line-height: 55px;
+                    font-size: 44px;
+                    font-weight: normal;
+                    padding: 10px 0;
+                }
+            }
+
+            .user-testimonial-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 0 110px;
+
+                .user-testimonial-item {
+                    display: flex;
+                    padding-top: 64px;
+                    align-items: center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    width: 260px;
+
+                    .avatar{
+                        border-radius: 50%;
+                        width: 60px;
+                        height: 60px;
+                        overflow: hidden;
+                        box-shadow: 0px 10px 20px #e1daf3;
+                        align-self: flex-start;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .user-info{
+                        
+                        margin-bottom: 20px;
+                        padding-top: 20px;
+                        font-size: 12px;
+                        margin-left: 15px;
+                        text-align: left;
+
+                        span:first-child {
+                            margin-bottom: 10px;
+                            line-height: 20px;
+                            color: #1a1038;
+                            text-transform: uppercase;
+                        }
+                        
+                        .rating img {
+                            margin-right: 5px;
+                            width: 10px;
+                            height: 10px;
+                        }
+
+                        span:last-child {
+                            padding-top: 5px;
+                            line-height: 15px;
+                            color: #b8b8bd;
+                        }
+                        
+                    }
+                    .user-testimonial-item-comment{
+                        height: 90px;
+                        line-height: 21px;
+                        font-size: 16px;
+                        color: #62626f;
+                        text-align: left;
+                        font-weight: 200;
+
+                        span:first-child, span:last-child{
+                            font-weight: 900;
+                        }
+                    }
+
+                    .form-divider{
+                        width: 100%;
+                        background-image: url(/assets//imgs/form-divider.svg);
+                        background-repeat: repeat-x;
+                        margin: 40px 0;
+                        margin-top: 54px;
+                        margin-bottom: 0;
+                        height: 10.27px;
+                    }
+
+                }
+            }
+
+        }
+
+    .security-wrapper{
+        position: relative;
 
         .content-text{
-            padding-left: 226px;
-            padding-right: 226px;
-            padding-top: 155px;
-            padding-bottom:0px;
+            padding: 155px 110px 0;
             line-height: normal;
-            text-align: center;
+            text-align: left;
             color: $primary-color;
             position: relative;
 
             .content-text-title-sub{
                 margin-bottom: 10px;
-                line-height: 25px;
+                line-height: 18px;
                 color: $secondary-color;
                 font-size: 14px;
                 font-weight: normal;
@@ -564,95 +681,56 @@
                 }
             }
             .content-text-title{
-                line-height: 55px;
+                line-height: 60px;
                 font-size: 44px;
                 font-weight: normal;
                 padding: 10px 0;
             }
         }
 
-        .user-testimonial-list {
+        .security-list{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
-            padding: 0 110px;
+            justify-content: flex-end;
+            padding: 65px 144px 154px 0;
 
-            .user-testimonial-item {
+            .security-item {
                 display: flex;
-                padding-top: 64px;
-                align-items: center;
-                flex-direction: row;
-                flex-wrap: wrap;
-                width: 260px;
+                flex-direction: column;
+                font-size: 16px;
+                align-items: flex-start;
+                width: 25%;
+                    
+                &:not(:last-child) {
+                    margin-right: 8%;
+                }
 
-                .avatar{
-                    border-radius: 50%;
-                    width: 60px;
-                    height: 60px;
-                    overflow: hidden;
-                    box-shadow: 0px 10px 20px #e1daf3;
-                    align-self: flex-start;
+                .security-item-img {
+                    margin-bottom: 20px;
+                    width: 40px;
+                    height: 40px;
 
                     img{
-                        width: 100%;
-                        height: auto;
+                        width: 40px;
+                        height: 40px;
                     }
                 }
 
-                .user-info{
-                    
-                    margin-bottom: 20px;
-                    padding-top: 20px;
-                    font-size: 12px;
-                    margin-left: 15px;
+                .security-item-title {
+                    margin-bottom: 10px;
+                    line-height: 30px;
                     text-align: left;
-
-                    span:first-child {
-                        margin-bottom: 10px;
-                        line-height: 20px;
-                        color: #1a1038;
-                        text-transform: uppercase;
-                    }
-                    
-                    .rating img {
-                        margin-right: 5px;
-                        width: 10px;
-                        height: 10px;
-                    }
-
-                     span:last-child {
-                        padding-top: 5px;
-                        line-height: 15px;
-                        color: #b8b8bd;
-                    }
-                    
+                    color: $primary-color;
                 }
-                .user-testimonial-item-comment{
-                    height: 90px;
-                    line-height: 21px;
-                    font-size: 16px;
-                    color: #62626f;
-                    text-align: left;
+
+                .security-item-content {
+                    line-height: 20px;
                     font-weight: 200;
-
-                    span:first-child, span:last-child{
-                        font-weight: 900;
-                    }
+                    text-align: left;
+                    color: #62626f;
                 }
-
-                .form-divider{
-                    width: 100%;
-                    background-image: url(/assets//imgs/form-divider.svg);
-                    background-repeat: repeat-x;
-                    margin: 40px 0;
-                    margin-top: 54px;
-                    margin-bottom: 0;
-                    height: 10.27px;
-                }
-
             }
         }
-
     }
 
 }

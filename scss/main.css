@@ -750,6 +750,100 @@
   height: 10.27px;
 }
 
+.main-wrapper .security-wrapper {
+  position: relative;
+}
+
+.main-wrapper .security-wrapper .content-text {
+  padding: 155px 110px 0;
+  line-height: normal;
+  text-align: left;
+  color: #1a1038;
+  position: relative;
+}
+
+.main-wrapper .security-wrapper .content-text .content-text-title-sub {
+  margin-bottom: 10px;
+  line-height: 18px;
+  color: #6b38f5;
+  font-size: 14px;
+  font-weight: normal;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+}
+
+.main-wrapper .security-wrapper .content-text .content-text-title-sub::before {
+  display: inline-block;
+  margin-right: 0px;
+  content: "-";
+  color: #41d9af;
+}
+
+.main-wrapper .security-wrapper .content-text .content-text-title {
+  line-height: 60px;
+  font-size: 44px;
+  font-weight: normal;
+  padding: 10px 0;
+}
+
+.main-wrapper .security-wrapper .security-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 65px 144px 154px 0;
+}
+
+.main-wrapper .security-wrapper .security-list .security-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 25%;
+}
+
+.main-wrapper .security-wrapper .security-list .security-item:not(:last-child) {
+  margin-right: 8%;
+}
+
+.main-wrapper .security-wrapper .security-list .security-item .security-item-img {
+  margin-bottom: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.main-wrapper .security-wrapper .security-list .security-item .security-item-img img {
+  width: 40px;
+  height: 40px;
+}
+
+.main-wrapper .security-wrapper .security-list .security-item .security-item-title {
+  margin-bottom: 10px;
+  line-height: 30px;
+  text-align: left;
+  color: #1a1038;
+}
+
+.main-wrapper .security-wrapper .security-list .security-item .security-item-content {
+  line-height: 20px;
+  font-weight: 200;
+  text-align: left;
+  color: #62626f;
+}
+
 body {
   height: 100vh;
   font-family: 'Fira Mono', monospace;
