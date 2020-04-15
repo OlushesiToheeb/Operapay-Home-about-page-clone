@@ -1,0 +1,205 @@
+.footer {
+    position: relative;
+    padding: 75px 60px 67px 60px;
+    background: #fff;
+    color: $primary-color;
+    display: flex;
+    flex-wrap: wrap;
+
+    .content__left, .content__right {
+        width: 100%;
+        display: inline-block;
+        line-height: normal;
+        flex-grow: 1;
+    }
+
+    .content__left{
+        width: 33%;
+        display: inline-block;
+        line-height: normal;
+        flex-grow: 1;
+
+        .logo-box {
+            display: flex;
+            margin-bottom: 25px;
+
+            .logo {
+                display: inline-flex;
+                height: 40px;
+                width: auto;
+                margin-right: 18px;
+            }
+
+            .tagline {
+                width: 185px;
+                font-size: 16px;
+                line-height: normal;
+                font-weight: 200;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-right: 20px;
+
+            & :first-child{
+                margin-bottom: 20px;
+            }
+
+            .google-play-button, .apple-store-button {
+                border: none;
+                border-radius: 40px;
+                width: 155px;
+                height: 55px;
+                font-size: 14px;
+                line-height: 55px;
+                font-family: "Basis Grotesque Pro", "Arial", sans-serif;
+                text-align: center;
+                background-color: #fff;
+                color: #6b38f5;
+                cursor: pointer;
+            }
+
+            .google-play-button {
+                position: relative;
+                text-transform: none;
+                color: #fff;
+                background-color: #000;
+                width: 165px;
+                padding-right: 28px;
+                display: inline-block;
+                text-align: right;
+                
+
+                img {
+                    position: absolute;
+                    height: 23px;
+                    width: auto;
+                    top: 16px;
+                    left: 20px;
+                }
+            }
+
+            .apple-store-button {
+                position: relative;
+                text-transform: none;
+                color: #fff;
+                background-color: #000;
+                padding-right: 20px;
+            }
+
+            .apple-store-button.download-on-the-text {
+                padding-left: 61px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 165px;
+                height: 55px;
+                font-size: 15px;
+                line-height: 24px;
+                text-align: left;
+
+                 img {
+                    position: absolute;
+                    height: 23px;
+                    width: auto;
+                    top: 14.5px;
+                    left: 20px;
+                }
+
+                span {
+                    display: block;
+                    font-size: 10px;
+                    line-height: 10px;
+                    position: relative;
+                    top: 3px;
+                }
+            }
+        }
+    }
+
+    .content__right{
+        
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        width: 66%;
+        padding-left: 0;
+
+        .column {
+            margin-bottom: 37px;
+            margin-right: 40px;
+            flex-grow: 1;
+
+            .column__title {
+                display: inline-block;
+                margin-bottom: 15px;
+                font-size: 14px;
+                line-height: 165%;
+                color: $primary-color;
+
+            }
+
+            .footer__links{
+                list-style: none;
+                margin-bottom: 1rem;
+
+                li {
+                    margin-bottom: 10px;
+                    width: 110px;
+                    font-size: 12px;
+                    line-height: 20px;
+
+                    .footer__link {
+                        height: 100%;
+                        color: #62626f;
+                    }
+                }
+            }
+
+            .footer__others {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .social-media-wrapper {
+                    display: flex;
+
+                    .social-media-link {
+                        cursor: pointer;
+                        padding: 1px;
+                        margin-left: 10px;
+
+                        &:first-child {
+                            margin-left: 0px;
+                        }
+                    }
+                    
+                }
+
+                .pci-logo {
+                    display: block;
+                    width: 80px;
+                    height: 30px;
+                    margin-right: 40px;
+                    margin-top: 37px;
+                    margin-bottom: 15px;
+                }
+
+                .copyright-text {
+                    position: absolute;
+                    left: 25px;
+                    bottom: -15px;
+                    font-size: 12px;
+                    line-height: 25px;
+                    color: #62626f;
+                    position: static;
+                }
+            }
+        }
+    }
+}
