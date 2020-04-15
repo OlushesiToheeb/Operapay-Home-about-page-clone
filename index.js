@@ -14,3 +14,14 @@ window.addEventListener("load", () => {
     };
 
 })
+
+let serviceDropdown = document.getElementById('service');
+let dropdown = document.getElementById('dropdown');
+let angleUp = document.getElementById('angleUp')
+let angleDown = document.getElementById('angleDown');
+
+serviceDropdown.addEventListener('click', () => {
+    dropdown.classList.toggle('d-none');
+    angleDown.classList.toggle('d-none')
+    angleUp.classList.toggle('d-none')
+})

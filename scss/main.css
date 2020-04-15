@@ -1024,6 +1024,75 @@
   color: #1a1038;
 }
 
+.nav .navBar .dropdown-menu {
+  padding: 24px 50px 0px;
+  max-width: unset;
+  width: 860px;
+  height: unset;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 85px;
+}
+
+.nav .navBar .dropdown-menu .dropdown-menu-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 225px;
+}
+
+.nav .navBar .dropdown-menu .dropdown-menu-grid .dropdown-menu-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+  width: 35%;
+}
+
+.nav .navBar .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-image {
+  width: 40px;
+  height: 40px;
+}
+
+.nav .navBar .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-content {
+  padding: 0px 8px;
+  color: #1a1038;
+  text-align: left;
+  width: initial;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav .navBar .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-content .dropdown-menu-service-content-title {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.nav .navBar .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-content .dropdown-menu-service-content-text {
+  font-size: 10px;
+  font-weight: 200;
+  color: #62626f;
+  line-height: 14px;
+  white-space: normal;
+}
+
 .nav .menu-button {
   margin: 0 15px;
   padding: 12px 24px;
@@ -1315,7 +1384,7 @@ button {
 }
 
 .nav-colored {
-  z-index: 99;
+  z-index: 9999;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 0px #eeeffb;
           box-shadow: 0px 1px 0px #eeeffb;
