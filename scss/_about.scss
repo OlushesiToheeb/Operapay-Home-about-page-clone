@@ -1,0 +1,55 @@
+
+.main-wrapper {
+    position: relative;
+    background: #ffffff;
+    margin: 0 auto;
+
+    .header{
+        position: relative;
+        height: 665px;
+
+        .introduce {
+            position: absolute;
+            width: 100%;
+            padding: 0 60px;
+            bottom: 90px;
+            z-index: 1;
+
+            .introduce-main{
+                width: 505px;
+                line-height: 50px;
+                font-size: 38px;
+                color: $primary-color;
+            }
+
+            .introduce-text{
+                font-weight: 200;
+                color: #62626f;
+                margin-top: 30px;
+                font-size: 20px;
+                line-height: 27px;
+                margin-bottom: 0;
+                display: block;
+                width: 460px;
+            }
+        }
+
+        .header-image{
+            position: absolute;
+            background-size: cover;
+            display: block;
+            bottom: initial;
+            right: 0;
+            width: 747px;
+            height: 520px;
+            top: 95px;
+            left: 505px;
+
+            img{
+                height: auto;
+                width: 100%;
+                max-width: initial;
+            }
+        }
+    }
+}

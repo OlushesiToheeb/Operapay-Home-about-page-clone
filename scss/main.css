@@ -1034,9 +1034,9 @@
   position: absolute;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease-in-out;
   background: #fff;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   left: 0;
   right: 0;
   margin: auto;
@@ -1111,6 +1111,61 @@
 
 .nav .menu-button a:hover {
   background-color: #642de4;
+}
+
+.main-wrapper {
+  position: relative;
+  background: #ffffff;
+  margin: 0 auto;
+}
+
+.main-wrapper .header {
+  position: relative;
+  height: 665px;
+}
+
+.main-wrapper .header .introduce {
+  position: absolute;
+  width: 100%;
+  padding: 0 60px;
+  bottom: 90px;
+  z-index: 1;
+}
+
+.main-wrapper .header .introduce .introduce-main {
+  width: 505px;
+  line-height: 50px;
+  font-size: 38px;
+  color: #1a1038;
+}
+
+.main-wrapper .header .introduce .introduce-text {
+  font-weight: 200;
+  color: #62626f;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 0;
+  display: block;
+  width: 460px;
+}
+
+.main-wrapper .header .header-image {
+  position: absolute;
+  background-size: cover;
+  display: block;
+  bottom: initial;
+  right: 0;
+  width: 747px;
+  height: 520px;
+  top: 95px;
+  left: 505px;
+}
+
+.main-wrapper .header .header-image img {
+  height: auto;
+  width: 100%;
+  max-width: initial;
 }
 
 .footer {
