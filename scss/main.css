@@ -1093,6 +1093,22 @@
   white-space: normal;
 }
 
+.nav button.toggle-menu {
+  display: none;
+  font-size: 14px;
+  line-height: 2;
+  padding-left: 24px;
+  background: inherit;
+  border: none;
+  text-align: right;
+  text-transform: uppercase;
+  color: #1a1038 !important;
+  -webkit-transition: color 50ms ease-out;
+  transition: color 50ms ease-out;
+  outline: none;
+  cursor: pointer;
+}
+
 .nav .menu-button {
   margin: 0 15px;
   padding: 12px 24px;
@@ -1892,6 +1908,35 @@
   position: static;
 }
 
+@media screen and (max-width: 768px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: height 200ms ease-in-out, padding 200ms ease-in-out;
+    transition: height 200ms ease-in-out, padding 200ms ease-in-out;
+    height: 80px;
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-wrapper .hero-header .hero-bg {
+    left: 495px;
+  }
+}
+
 body {
   height: 100vh;
   font-family: 'Fira Mono', monospace;
@@ -1915,7 +1960,6 @@ a {
 button {
   border: none;
   outline: none;
-  color: #fff;
   font-family: 'Fira Mono', monospace;
   cursor: pointer;
 }

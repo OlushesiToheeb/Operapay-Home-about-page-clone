@@ -100,6 +100,21 @@
         }
     }
 
+    button.toggle-menu{
+        display: none;
+        font-size: 14px;
+        line-height: 2;
+        padding-left: 24px;
+        background: inherit;
+        border: none;
+        text-align: right;
+        text-transform: uppercase;
+        color: $primary-color!important;
+        transition: color 50ms ease-out;
+        outline: none;
+        cursor: pointer;
+    }
+
      .menu-button{
         margin: 0 15px;
         padding: 12px 24px;

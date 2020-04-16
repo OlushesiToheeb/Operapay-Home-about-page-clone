@@ -1,0 +1,57 @@
+@include media-md{
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: height 200ms ease-in-out, padding 200ms ease-in-out;
+        height: 80px;
+        padding: 40px 20px;
+
+        // .navBar{
+        //     display: none;
+        // }
+    }
+
+    
+    // .nav .menu-button{
+    //     display: none;
+    // }
+
+    // .nav button.toogle-menu{
+    //     display: inline-flex;
+    // }
+
+    // .hero-header .hero-bg{
+    //     display: none;
+    // }
+
+}
+
+@include media-lg{
+
+    .main-wrapper .hero-header .hero-bg {
+        left:495px;
+    }
+}
+
+@include media-md-l{
+
+    // .nav .navBar{
+    //      display: none;
+    // }
+
+    // .nav .menu-button{
+    //     display: none;
+    // }
+ 
+}
+
+
+
+

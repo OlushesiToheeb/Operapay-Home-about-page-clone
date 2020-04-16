@@ -3,6 +3,8 @@
 @import 'nav';
 @import 'about';
 @import 'footer';
+@import 'responsive';
+
 
 body{
     height: 100vh;
@@ -29,7 +31,6 @@ a{
 button{
     border: none;
     outline: none;
-    color: #fff;
     font-family: 'Fira Mono', monospace;
     cursor: pointer;
 }
