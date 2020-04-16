@@ -17,6 +17,7 @@
             padding: 0 60px;
             bottom: 70px;
             z-index: 1;
+            width: 51%;
 
             .intro-main{
                 font-family: inherit;
@@ -31,6 +32,7 @@
                 color: #62626f;
                 margin-top: 30px;
                 margin-bottom: 60px;
+                width: 77%;
             }
             .intro-button{
                 display: flex;
@@ -742,7 +744,7 @@
             .payment-card-hand {
                 position: absolute;
                 transition: transform 1000ms ease-in-out;
-                bottom: 0;
+                bottom: -4px;
                 left: 110px;
                 transform: translateX(0) translateY(0);
 

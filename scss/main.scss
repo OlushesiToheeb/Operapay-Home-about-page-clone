@@ -10,6 +10,9 @@ body{
     height: 100vh;
     font-family: 'Fira Mono', monospace;
     color:#fff;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 a{
