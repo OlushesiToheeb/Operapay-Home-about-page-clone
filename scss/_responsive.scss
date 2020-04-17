@@ -309,26 +309,241 @@
                 }
             }
         }
+
+        .header {
+            height: 568px;
+
+            .introduce{
+                padding: 0 20px;
+                bottom: 30px;
+                .introduce-main{
+                    font-size: 28px;
+                    line-height: 33px;
+                    width: 100%;
+                }
+                .introduce-text{
+                    font-size: 16px;
+                    line-height: 21px;
+                    margin-bottom: 0;
+                    width:100%
+                }
+            }
+
+            .header-image{
+                display: block;
+                width: 90%;
+                height: 195px;
+                top: 89px;
+                left: 20px;
+                background-size: cover;
+
+                img{
+                    width: 90%;
+                    max-width: 420px;
+                    height: auto;
+                }
+            }
+        }
+
+        .content{
+            .introduction {
+                padding: 95px 0 75px;
+                display: inline-block;
+
+                &::before, &::after{
+                    display: none;
+                }
+
+                .introduction-bg-img{
+                    position: relative;
+                    margin: 0 auto;
+                    height: 365px;
+                    max-width: calc(365px * 648 / 530);   
+                }
+
+                .content-title{
+                    width: 100%;
+                    padding: 0 20px 0;
+                    .content-title-main{
+                        padding-top: 45px;
+                        line-height: 33px;
+                        font-size: 28px;
+                    }
+
+                    .content-title-text{
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .why-we-do-it{
+            .introduction {
+                padding: 95px 0 75px;
+                display: inline-block;
+
+                &::before, &::after{
+                    display: none;
+                }
+
+                .introduction-bg-img{
+                    position: relative;
+                    margin: 0 auto;
+                    height: 365px;
+                    max-width: calc(365px * 648 / 530);   
+                }
+
+                .content-title{
+                    width: 100%;
+                    padding: 0 20px 0;
+                    .content-title-main{
+                        padding-top: 45px;
+                        line-height: 33px;
+                        font-size: 28px;
+                    }
+
+                    .content-title-text{
+                        line-height: 24px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .our-values-wrapper{
+
+            .our-values {
+                position: relative;
+                padding: 100px 0;
+
+                &::before, &::after{
+                    display: none;
+                }
+
+                .content-title{
+                    width: 100%;
+                    padding: 0 20px ;
+                    .content-title-main{
+                        line-height: 35px;
+                        font-size: 28px;
+                    }
+
+                    .content-title-text{
+                        margin-top: 30px;
+                        font-size: 16px;
+                        line-height: 21px
+                    }
+                }
+
+                .our-values__list .info-with-image-item {
+                    
+                    text-align: center;
+
+                    .info-with-image-item__icon {
+                        margin-top: 45px;
+                        margin-bottom: 24px;
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+                
+            }
+        }
+
+        .offices-wrapper{
+
+            .offices {
+                padding: 100px 20px;
+
+                .content-title {
+                    padding: 0 0 25px;
+
+                    .content-title-main {
+                        line-height: 38px;
+                        font-size: 28px;
+                    }
+                }
+
+                .offices-info-map{
+                    display: none;
+                }
+
+                .office-info-list{
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    .office {
+                        text-align: center;
+
+                        .office__flag-icon {
+                            margin-top: 50px;
+                            margin-bottom: 20px;
+                            width: 30px;
+                            height: 30px;
+                        }
+
+                        .city {
+                            display: block;
+                            line-height: 30px;
+                            font-size: 16px;
+                        }
+
+                        .office__address {
+                            margin-top: 15px;
+                            line-height: 20px;
+                            font-size: 14px;
+                            font-weight: 200;
+                        }
+                    }
+                }
+            }
+        }
+
+        .vacancy-wrapper{
+            
+
+            .job-vacancies {
+                flex-direction: column;
+                height: 365px;
+                padding: 70px 20px;
+
+                &::before, &::after{
+                    display: none;
+                }
+
+                .job-vacancies__text {
+                    font-size: 20px;
+                    text-align: center;
+                }
+            }
+        }
+        
     }
 
+    
+
     .footer{
+
         padding: 65px 0 120px 30px;
+        display: flex;
+        flex-wrap: wrap;
 
         .content__left{
             width: 100%;
         }
 
-        .content__right {
+        .content__right{
             position: relative;
             display: flex;
             flex-wrap: wrap;
             margin-top: 55px;
             width: 100%;
 
-            .column {
+            .column{
                 margin-bottom: 37px;
             }
-            
+
             &:nth-child(odd) {
                 margin-right: 40px;
             }
