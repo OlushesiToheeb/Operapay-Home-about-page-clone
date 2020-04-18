@@ -9,13 +9,13 @@ $secondary-color:#6b38f5;
   }
 
   @mixin media-md{
-    @media screen and (max-width:768px){
+    @media screen and (max-width:600px){
       @content;
     }
   }
 
   @mixin media-md-l{
-    @media screen and (min-width:768px){
+    @media screen and (max-width:899px){
       @content;
     }
   }
@@ -30,4 +30,18 @@ $secondary-color:#6b38f5;
     @media screen and (min-width:1600px){
       @content;
     }
+  }
+
+  @mixin for-smaller-phone-only {
+    @media screen and (max-width: 400px) { @content; }
+  }
+
+  @mixin for-phone-only {
+    @media screen and (max-width: 599px) { @content; }
+  }
+  @mixin for-tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  }
+  @mixin for-tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
   }

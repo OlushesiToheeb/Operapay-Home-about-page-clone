@@ -1131,6 +1131,129 @@
   background-color: #642de4;
 }
 
+nav.mobile-menu {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 135px 20px 30px 20px;
+  -webkit-transition: left 200ms ease-in-out, opacity 200ms ease-in-out;
+  transition: left 200ms ease-in-out, opacity 200ms ease-in-out;
+  z-index: 2;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items {
+  width: 100%;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .mobile-menu__item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  font-weight: 200;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 500;
+  line-height: normal;
+  width: 100%;
+  margin-top: 30px;
+  padding-bottom: 30px;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .mobile-menu__item.dropdown .caretIcon {
+  padding: 0px 0px 0px 6px;
+  display: inline-block;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .dropdown-menu {
+  padding: 24px 50px 0px;
+  max-width: 500px;
+  width: 100%;
+  height: unset;
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  top: 85px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .dropdown-menu .dropdown-menu-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: unset;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .dropdown-menu .dropdown-menu-grid .dropdown-menu-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 24px;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-image {
+  width: 40px;
+  height: 40px;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-content {
+  padding: 0px 8px;
+  color: #1a1038;
+  text-align: left;
+  width: initial;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-content .dropdown-menu-service-content-title {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items .dropdown-menu .dropdown-menu-grid .dropdown-menu-service .dropdown-menu-service-content .dropdown-menu-service-content-text {
+  font-size: 10px;
+  font-weight: 200;
+  color: #62626f;
+  line-height: 14px;
+  white-space: normal;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .menu-button {
+  margin: 0 15px;
+  padding: 12px 24px;
+  width: 100%;
+  background-color: #6b38f5;
+  text-align: center;
+  border-radius: 40px;
+  font-size: 14px;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .menu-button a {
+  color: #fff !important;
+  font-family: inherit;
+}
+
+nav.mobile-menu .mobile-menu__wrapper .menu-button a:hover {
+  background-color: #642de4;
+}
+
 .main-wrapper {
   position: relative;
   background: #ffffff;
@@ -1909,7 +2032,7 @@
   position: static;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .nav {
     position: fixed;
     top: 0;
@@ -2255,6 +2378,7 @@
     margin: 0 auto;
     height: 365px;
     max-width: calc(365px * 648 / 530);
+    width: 100%;
   }
   .main-wrapper .content .introduction .content-title {
     width: 100%;
@@ -2281,6 +2405,7 @@
     margin: 0 auto;
     height: 365px;
     max-width: calc(365px * 648 / 530);
+    width: 100%;
   }
   .main-wrapper .why-we-do-it .introduction .content-title {
     width: 100%;
@@ -2416,6 +2541,237 @@
     font-size: 12px;
     line-height: 25px;
     color: #62626f;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .nav {
+    height: 120px;
+    padding: 40px 60px;
+  }
+  .main-wrapper {
+    width: 100%;
+  }
+  .main-wrapper .hero-header {
+    height: 665px;
+  }
+  .main-wrapper .hero-header .intro {
+    padding: 0 60px;
+    bottom: 105px;
+  }
+  .main-wrapper .hero-header .intro .intro-main {
+    width: 595px;
+    line-height: 50px;
+    font-size: 42px;
+  }
+  .main-wrapper .hero-header .intro .intro-text {
+    font-size: 20px;
+    line-height: 27px;
+    display: block;
+    width: 410px;
+  }
+  .main-wrapper .hero-header .hero-bg {
+    display: block;
+    right: 0px;
+    left: 195px;
+    bottom: 0;
+    width: 575px;
+    height: auto;
+  }
+  .main-wrapper .feature01 .content.first-child {
+    padding-top: 100px;
+  }
+  .main-wrapper .feature01 .content {
+    padding: 0px 60px;
+  }
+  .main-wrapper .feature01 .content .content-text {
+    padding-bottom: 75px;
+    text-align: left;
+    width: 100%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
+  .main-wrapper .feature01 .content .content-text .content-text-p {
+    width: 485px;
+    line-height: 27px;
+    font-size: 20px;
+  }
+  .main-wrapper .feature01 .content .content-text .content-key {
+    display: none;
+  }
+  .main-wrapper .feature01 .content .content-video {
+    text-align: center;
+    margin-bottom: 0;
+    left: 0px;
+  }
+  .main-wrapper .feature01 .content .content-video .video-wrapper .phone-frame {
+    position: initial;
+  }
+  .main-wrapper .feature02 .content.first-child {
+    padding-top: 100px;
+  }
+  .main-wrapper .feature02 .content {
+    padding: 0px 60px;
+  }
+  .main-wrapper .feature02 .content .content-text {
+    padding-bottom: 75px;
+    text-align: left;
+    padding: 0px 60px;
+  }
+  .main-wrapper .feature02 .content .content-text .content-text-p {
+    width: 485px;
+    line-height: 27px;
+    font-size: 20px;
+  }
+  .main-wrapper .feature02 .content .content-text .content-key {
+    display: none;
+  }
+  .main-wrapper .feature02 .content .content-video {
+    text-align: center;
+    margin-bottom: 0;
+    left: 0px;
+  }
+  .main-wrapper .feature02 .content .content-video .video-wrapper .phone-frame {
+    position: initial;
+  }
+  .main-wrapper .ofood-wrapper .content {
+    min-height: 816px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-wrapper .ofood-wrapper .content .content-text {
+    text-align: left;
+    padding-bottom: 75px;
+  }
+  .main-wrapper .ofood-wrapper .content .content-text .content-text-p {
+    width: 485px;
+    line-height: 27px;
+    font-size: 20px;
+  }
+  .main-wrapper .ofood-wrapper .content .ofood-image-wrapper {
+    margin: 10px auto 120px auto;
+    max-width: 585px;
+  }
+  .main-wrapper .partner-wrapper .content-text {
+    padding: 125px 34px 65px;
+  }
+  .main-wrapper .user-testimonials-wrapper .content-text {
+    padding-top: 155px;
+  }
+  .main-wrapper .user-testimonials-wrapper .user-testimonial-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 60px;
+  }
+  .main-wrapper .user-testimonials-wrapper .user-testimonial-list .user-testimonial-item .one-more {
+    margin: 0 auto;
+  }
+  .main-wrapper .security-wrapper .content-text {
+    padding: 155px 60px 0;
+    text-align: left;
+  }
+  .main-wrapper .security-wrapper .security-list {
+    padding: 65px 60px 125px;
+  }
+  .main-wrapper .security-wrapper .security-list .security-item {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 0 6% 0 0;
+    width: 40.12346%;
+  }
+  .main-wrapper .payment-card-wrapper .payment-card {
+    padding: 0 60px 85px;
+    margin-bottom: 665px;
+  }
+  .main-wrapper .payment-card-wrapper .payment-card .content-text {
+    padding-top: 125px;
+    margin: 0;
+  }
+  .main-wrapper .payment-card-wrapper .payment-card .content-text .content-text-p {
+    padding: 0;
+    width: 455px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .main-wrapper .payment-card-wrapper .payment-card .payment-card-hand {
+    bottom: -665px;
+  }
+  .main-wrapper .become-agent-wrapper .become-agent {
+    margin-top: 665px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-wrapper .become-agent-wrapper .become-agent .become-agent-title {
+    padding: 0 0 0 60px;
+    text-align: left;
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  .main-wrapper .become-agent-wrapper .become-agent .become-agent-title .become-agent-title__title {
+    margin-bottom: 30px;
+    font-size: 44px;
+    width: 400px;
+  }
+  .main-wrapper .become-agent-wrapper .become-agent .become-agent__agent {
+    display: block;
+    width: 100%;
+  }
+  .main-wrapper .become-agent-wrapper .become-agent .become-agent__agent img {
+    width: 100%;
+    right: 0px;
+  }
+  .footer {
+    padding: 75px 0 60px 60px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .main-wrapper .header .introduce .introduce-main {
+    font-size: 24px;
+  }
+  .main-wrapper .vacancy-wrapper .job-vacancies .job-vacancies__text {
+    font-size: 21px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-wrapper .header .introduce .introduce-main {
+    font-size: 21px;
+  }
+  .main-wrapper .header .introduce .introduce-text {
+    font-size: 14px;
+  }
+  .main-wrapper .our-values-wrapper .our-values .our-values__list {
+    padding: 0 50px;
+    width: 100%;
+  }
+  .main-wrapper .offices-wrapper .offices {
+    padding: 100px 0px;
+    width: 100%;
+  }
+  .main-wrapper .vacancy-wrapper .job-vacancies {
+    padding: 70px 10px;
+  }
+  .main-wrapper .vacancy-wrapper .job-vacancies .job-vacancies__text {
+    font-size: 20px;
+    width: 100%;
   }
 }
 

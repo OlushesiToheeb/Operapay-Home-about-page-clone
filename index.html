@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, use-scalable=0">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="./scss/main.css">
@@ -166,7 +166,7 @@
                 <a href="/" class="menu-item">Blog</a>
             </div>
 
-            <button class="toggle-menu">Menu</button>
+            <button class="toggle-menu" id="toggle-button">Menu</button>
             <!-- <button class="toggle-menu d-none">Close</button> -->
             <button class="menu-button">
                 <a href="/">Become an Agent</a>
@@ -174,10 +174,10 @@
    
         </nav>
 
-        <nav class="mobile-menu d-none">
+        <nav class="mobile-menu d-none" id="mobile-menu">
             <div class="mobile-menu__wrapper">
                 <div class="mobile-menu__items">
-                    <a href="#" class="dropdown mobile-menu__items" id="service">
+                    <a href="#" class="dropdown mobile-menu__item" id="service">
                         Service
                         <div class="caretIcon">
                             <i class="fas fa-angle-up d-none" style="color:#6b38f5; " id="angleUp"></i>
@@ -322,12 +322,12 @@
                             </a>
                         </div>
                     </div>
-                    <a href="/about.html" class="menu-item">About Us</a>
-                    <a href="/" class="menu-item">Blog</a>
-                    <button class="menu-button">
-                        <a href="/">Become an Agent</a>
-                    </button>
+                    <a href="/about.html" class="mobile-menu__item">About Us</a>
+                    <a href="/" class="mobile-menu__item">Blog</a>                   
                 </div>
+                <button class="menu-button">
+                    <a href="/">Become an Agent</a>
+                </button>
             </div>
         </nav>
     </header>
@@ -358,7 +358,7 @@
             <!-- first feature section -->
 
             <section class="feature01" style="background-color: rgb(255, 255, 255);">
-                <div class="content">
+                <div class="content first-child">
                     <div class="content-text">
                         <h4 class="content-text-title-sub">
                             Meet your freedom
@@ -568,7 +568,7 @@
                         </p>
                         <div class="form-divider"></div>
                     </div>
-                    <div class="user-testimonial-item">
+                    <div class="user-testimonial-item one-more">
                         <div class="avatar">
                             <img src="/assets/imgs/user3.png" alt="" srcset="">
                         </div>
