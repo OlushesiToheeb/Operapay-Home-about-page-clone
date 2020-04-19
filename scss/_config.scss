@@ -15,7 +15,7 @@ $secondary-color:#6b38f5;
   }
 
   @mixin media-md-l{
-    @media screen and (max-width:899px){
+    @media all and (min-width: 699px) and (max-width: 899px) {
       @content;
     }
   }

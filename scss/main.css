@@ -1140,7 +1140,7 @@ nav.mobile-menu {
   padding: 135px 20px 30px 20px;
   -webkit-transition: left 200ms ease-in-out, opacity 200ms ease-in-out;
   transition: left 200ms ease-in-out, opacity 200ms ease-in-out;
-  z-index: 2;
+  z-index: 9;
 }
 
 nav.mobile-menu .mobile-menu__wrapper .mobile-menu__items {
@@ -2261,6 +2261,9 @@ nav.mobile-menu .mobile-menu__wrapper .menu-button a:hover {
     padding: 0 20px 55px;
     margin-bottom: 524px;
   }
+  .main-wrapper .payment-card-wrapper .payment-card .form-divider {
+    width: 100%;
+  }
   .main-wrapper .payment-card-wrapper .payment-card .content-text {
     padding: 65px 0 0 0;
     text-align: center;
@@ -2530,21 +2533,44 @@ nav.mobile-menu .mobile-menu__wrapper .menu-button a:hover {
   }
   .footer .content__right .column {
     margin-bottom: 37px;
+    margin-right: 0px;
+  }
+  .footer .content__right .column .footer__others {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer .content__right .column .footer__others .pci-logo {
+    margin-top: 0px;
+    margin-right: 40px;
+    width: 100%;
+    margin-left: 40px;
+    margin-bottom: initial;
+  }
+  .footer .content__right .column .footer__others .copyright-text {
+    left: 25px;
+    bottom: -15px;
+    width: 100%;
+    position: absolute;
   }
   .footer .content__right:nth-child(odd) {
     margin-right: 40px;
   }
-  .footer .content__right .footer__others .copyright-text {
-    position: absolute;
-    left: 0;
-    bottom: -15px;
-    font-size: 12px;
-    line-height: 25px;
-    color: #62626f;
-  }
 }
 
-@media screen and (max-width: 899px) {
+@media all and (min-width: 699px) and (max-width: 899px) {
   .nav {
     height: 120px;
     padding: 40px 60px;
@@ -2675,7 +2701,7 @@ nav.mobile-menu .mobile-menu__wrapper .menu-button a:hover {
             justify-content: space-between;
     padding: 0 60px;
   }
-  .main-wrapper .user-testimonials-wrapper .user-testimonial-list .user-testimonial-item .one-more {
+  .main-wrapper .user-testimonials-wrapper .user-testimonial-list .user-testimonial-item.one-more {
     margin: 0 auto;
   }
   .main-wrapper .security-wrapper .content-text {
@@ -2736,8 +2762,111 @@ nav.mobile-menu .mobile-menu__wrapper .menu-button a:hover {
     width: 100%;
     right: 0px;
   }
+  .main-wrapper .header .introduce .introduce-main {
+    width: 378px;
+  }
+  .main-wrapper .header .introduce .introduce-text {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 0;
+    width: 334px;
+  }
+  .main-wrapper .header .header-image {
+    width: 575px;
+    height: 400px;
+    top: 100px;
+    bottom: initial;
+    left: 190px;
+  }
+  .main-wrapper .content .introduction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-wrapper .content .introduction .introduction-bg-img {
+    width: 648px;
+    max-width: initial;
+    height: 530px;
+    background-position: left top;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+  .main-wrapper .content .introduction .content-title {
+    padding-left: 65px;
+    padding-right: 43px;
+    width: 100%;
+  }
+  .main-wrapper .why-we-do-it .introduction {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main-wrapper .why-we-do-it .introduction .introduction-bg-img {
+    width: 648px;
+    max-width: initial;
+    height: 530px;
+    background-position: left top;
+    background-size: 100% 100%;
+    margin: 0 auto;
+  }
+  .main-wrapper .why-we-do-it .introduction .content-title {
+    padding-left: 65px;
+    padding-right: 43px;
+    width: 100%;
+  }
+  .main-wrapper .offices-wrapper .offices {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .main-wrapper .offices-wrapper .offices .offices-info-map {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 768px;
+  }
+  .main-wrapper .offices-wrapper .offices .office-info-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 648px;
+  }
   .footer {
     padding: 75px 0 60px 60px;
+  }
+  .footer .content__right .column .footer__others {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .footer .content__right .column .footer__others .pci-logo {
+    margin-top: 0px;
+    margin-right: 40px;
+    width: 100%;
+  }
+  .footer .content__right .column .footer__others .copyright-text {
+    left: 25px;
+    bottom: -15px;
+    width: 100%;
   }
 }
 

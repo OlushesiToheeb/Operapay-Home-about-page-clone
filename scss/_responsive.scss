@@ -244,7 +244,11 @@
             .payment-card{
                 padding: 0 20px 55px;
                 margin-bottom: 524px;
-
+                
+                .form-divider{
+                    width:100%;
+                }
+                
                 .content-text{
                     padding: 65px 0 0 0;
                     text-align: center;
@@ -544,6 +548,29 @@
 
             .column{
                 margin-bottom: 37px;
+                margin-right:0px;
+                .footer__others {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: nowrap;
+    
+                    .pci-logo {
+                        margin-top: 0px;
+                        margin-right: 40px;
+                        width:100%;
+                        margin-left: 40px;
+                        margin-bottom: initial;
+                    }
+    
+                    .copyright-text {
+                        left: 25px;
+                        bottom: -15px;
+                        width: 100%;
+                        position: absolute;
+                    }
+                }
             }
 
             &:nth-child(odd) {
@@ -551,14 +578,6 @@
             }
 
 
-            .footer__others .copyright-text {
-                position: absolute;
-                left: 0;
-                bottom: -15px;
-                font-size: 12px;
-                line-height: 25px;
-                color: #62626f;
-            }
         }
     }
     
@@ -728,7 +747,7 @@
                 justify-content: space-between;
                 padding: 0 60px;
 
-                .user-testimonial-item .one-more {
+                .user-testimonial-item.one-more {
                     margin: 0 auto;
                 }
             }
@@ -803,10 +822,130 @@
             }
         }
     
+        .header{
+
+            .introduce{
+
+                .introduce-main{
+                    width: 378px;
+                }
+
+                .introduce-text {
+                    font-size: 20px;
+                    line-height: 27px;
+                    margin-bottom: 0;
+                    width: 334px;
+                }
+            }
+                
+            
+            .header-image {
+                width: 575px;
+                height: 400px;
+                top: 100px;
+                bottom: initial;
+                left: 190px;
+            }
+        }
+
+        .content{
+
+            .introduction{
+                flex-direction: column;
+                
+                .introduction-bg-img{
+                    width: 648px;
+                    max-width: initial;
+                    height: 530px;
+                    background-position: left top;
+                    background-size: 100% 100%;
+                    margin: 0 auto;
+                }
+
+                .content-title{
+                    padding-left: 65px;
+                    padding-right: 43px;
+                    width:100%;
+                }
+
+            }
+        }
+
+        .why-we-do-it{
+
+            .introduction{
+                flex-direction: column-reverse;
+                
+                .introduction-bg-img{
+                    width: 648px;
+                    max-width: initial;
+                    height: 530px;
+                    background-position: left top;
+                    background-size: 100% 100%;
+                    margin: 0 auto;
+                }
+
+                .content-title{
+                    padding-left: 65px;
+                    padding-right: 43px;
+                    width:100%;
+                }
+
+            }
+        }
+
+        .offices-wrapper{
+
+            .offices {
+                padding-left: 0px;
+                padding-right: 0px;
+    
+                .offices-info-map {
+                    position: relative;
+                    display: block;
+                    margin: 0 auto;
+                    width: 768px;
+                }
+    
+                .office-info-list{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    margin-top: 80px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 648px;
+                }
+            }
+        }
     }
+
 
     .footer {
         padding: 75px 0 60px 60px;
+
+        .content__right .column{
+
+            .footer__others {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: nowrap;
+
+                .pci-logo {
+                    margin-top: 0px;
+                    margin-right: 40px;
+                    width:100%;
+                }
+
+                .copyright-text {
+                    left: 25px;
+                    bottom: -15px;
+                    width: 100%;
+                }
+            }
+            
+        }
     }
  
 }

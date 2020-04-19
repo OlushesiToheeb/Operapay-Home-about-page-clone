@@ -34,16 +34,15 @@ serviceDropdown.addEventListener('click', () => {
 
 let mobileMenuToggler = document.getElementById('toggle-button')
 let mobilemenu = document.getElementById('mobile-menu')
+let show = false;
 
 mobileMenuToggler.addEventListener('click', () =>{
-    
-    let show = false
 
     if(!show){
         alert('just do it')
         mobileMenuToggler.innerHTML="CLOSE"
         mobilemenu.classList.toggle('d-none')
     }else{
-        mobileMenuToggler.innerHTML="MENU"
+        mobileMenuToggler.innerHTML="MENU";
     }
 })
